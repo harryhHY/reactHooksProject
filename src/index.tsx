@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './pages/home/home';
+// import Used from './pages/used/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Home></Home>
+    {/* <Used></Used> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
