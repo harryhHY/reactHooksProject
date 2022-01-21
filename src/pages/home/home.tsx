@@ -1,13 +1,11 @@
-
-import React, { useEffect, useState,useContext,createContext } from "react";
-import Footer from '../footer/footer'
-
-
+import React, { useEffect, useState, useContext, createContext } from "react";
+import Header from "../../components/header/index";
 const Home = () => {
   return (
-    <div>
-      <Footer></Footer>
-    </div>
+    <>
+      <Header></Header>
+      <div>123</div>
+    </>
   );
 };
 export default Home;
