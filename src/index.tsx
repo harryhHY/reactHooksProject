@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router,Routes, Route, BrowserRouter } from "react-router-dom";
-import "./index.css";
+import "./style/index.less";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./pages/home/home";
 
