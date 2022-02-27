@@ -1,18 +1,20 @@
-import React from "react";
-import { headernavList } from "./data";
+import React ,{useState}from "react";
+import { headernavList } from "./js/data";
 import { useNavigate } from 'react-router-dom';
 
 const Header =()=>{
-    const navigate = useNavigate()
-    const goto= (path:any)=>{
-        navigate(path)
+    const navigate = useNavigate();
+    const [active,setactive] = useState(0)
+    const goto= (item:any)=>{
+        setactive(item.id)
+        navigate(item.path)
     }
     return (
         <>
             <div className="headernav">
                {
                    headernavList.map(item=>(
-                       <div key={item.id} onClick={()=>goto(item.path)} className="headernavli">
+                       <div key={item.id} onClick={()=>goto(item)} className={active===item.id?"headernavli headeractive":"headernavli"}>
                            {item.name}
                        </div>
                    ))
