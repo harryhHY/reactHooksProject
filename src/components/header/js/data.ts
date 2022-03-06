@@ -8,5 +8,15 @@ export const headernavList=[
         id:2,
         name:"厨艺",
         path:'/cookie'
+    },
+    {
+        id:3,
+        name:"旅游照片",
+        path:'/travel'
+    },
+    {
+        id:4,
+        name:"阅读",
+        path:'/read'
     }
 ]

@@ -1,4 +1,3 @@
-import React, { useEffect, useState, useContext, createContext } from "react";
 import Marquee from "react-fast-marquee";
 const Marqueecom = (props: { data: any; }) => {
     const {data}= props;
