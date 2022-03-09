@@ -6,16 +6,17 @@ const Read = () => {
     <>
       <Header headeractive={4}></Header>
       <div className="bookdiv">
-        {bookdata.map((item) => {
+        {bookdata.map((item, index) => {
           return (
-            <>
-              <div key={item.id} className="booklist">
-                <div className="centerimg">
-                  <img src={item.imgsrc} alt="" />
-                </div>
-                <div className="read_name">{item.name}</div>
+            <div
+              key={item.id + index}
+              className={`booklist animate__animated ${item.classname}`}
+            >
+              <div className="centerimg">
+                <img src={item.imgsrc} alt={item.name} />
               </div>
-            </>
+              <div className="read_name">{item.name}</div>
+            </div>
           );
         })}
       </div>
