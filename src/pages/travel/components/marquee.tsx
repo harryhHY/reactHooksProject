@@ -6,7 +6,7 @@ const Marqueecom = (props: { data: any; }) => {
     <>
     <Marquee pauseOnHover={true} speed={60} loop={0} gradient={false}>
       {data.map((item:any) => (
-        <span className="red" key={item.text}>{item.text}</span>
+        <span className="marquee_span" key={item.text}>{item.text}</span>
       ))}
     </Marquee>
   </>

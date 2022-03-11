@@ -1,18 +1,23 @@
 .bookdiv{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-wrap: wrap;
-    .booklist{
-        margin: 10px ;
-        img{
-            width: 149px;
-            height: 200px;
+    .bookdiv_child{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .booklist{
+            width: 159px;
+            img{
+                width: 149px;
+                height: 200px;
+            }
+            .read_name{
+                color: #000;
+                font-size: 18px;
+                text-align: center;
+            }
         }
-        .read_name{
-            color: #000;
-            font-size: 18px;
-            text-align: center;
-        }
+    }
+    & .bookdiv_child:last-child{
+        justify-content: start;
     }
 }

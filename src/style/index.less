@@ -26,10 +26,20 @@ body{display: flex;flex-direction:column;font-size: 18px;font-family: 'Vladimir 
     text-overflow: ellipsis; /* 超出部分显示省略号 */
     white-space: nowrap;
 }
-@media screen and (max-width:1200px) {
 
+#root{
+    padding: 58px 0  0;
+    .bookdiv,.home_div,.travel{
+        width: 100%;
+        height: calc(100vh - 58px - 78px);
+    }
+}
+@media screen and (max-width:1950px) {
+}
+@media screen and (max-width:1200px) {
     #root{
         min-width: 1200px;
+        padding: 58px 0  0;
     }
 }
 @media screen and (max-width:960px) {

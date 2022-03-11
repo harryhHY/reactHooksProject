@@ -1,10 +1,13 @@
 import Header from "../../components/header/index";
 import Footer from "../../components/footer/index";
-import { TRAVEL_DATA } from "./js/data";
+import Marqueecom from "./components/marquee";
+import { TRAVEL_DATA, marqueedata } from "./js/data";
+
 const Travel = () => {
   return (
-    <>
+    <div className="travel">
       <Header headeractive={3}></Header>
+      <Marqueecom data={marqueedata}></Marqueecom>
       <main>
         {TRAVEL_DATA.map((item, index) => {
           return (
@@ -18,7 +21,7 @@ const Travel = () => {
         })}
       </main>
       <Footer></Footer>
-    </>
+    </div>
   );
 };
 export default Travel;

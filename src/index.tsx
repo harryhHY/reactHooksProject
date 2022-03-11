@@ -7,6 +7,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import "./style/index.less";
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import reportWebVitals from "./reportWebVitals";
 import Home from "./pages/home/index";
 import Cookie from "./pages/cookie/index";
