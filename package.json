@@ -97,6 +97,7 @@
     ]
   },
   "devDependencies": {
+    "react-image-webp": "^0.8.0",
     "react-router-dom": "^6.2.1"
   },
   "jest": {

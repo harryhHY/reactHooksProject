@@ -3,6 +3,7 @@ import Footer from "../../components/footer/index";
 import { bookdata } from "./js/data";
 import { chunk } from "lodash";
 import { useEffect, useState } from "react";
+import Image from "react-image-webp";
 
 const Read = () => {
   const [newDataList, setDataList]: any = useState([]);
@@ -47,7 +48,10 @@ const Read = () => {
                     className={`booklist animate__animated ${itemchild.classname}`}
                   >
                     <div className="centerimg">
-                      <img src={itemchild.imgsrc} alt={itemchild.name} />
+                      <Image
+                        src={itemchild.imgsrc}
+                        webp={itemchild.img2src}
+                      />
                     </div>
                     <div className="read_name">{itemchild.name}</div>
                   </div>

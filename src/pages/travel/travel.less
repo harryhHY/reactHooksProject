@@ -1,29 +1,40 @@
-main{
-    -moz-column-count:2;
-    -webkit-column-count:2;
-    column-count:5;
-    -moz-column-gap:0;
-    -webkit-column-gap:0;
-    padding-top: 0.5em;
-    .travel_div{
+main {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 5;
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+    padding-top: 58px;
+    .travel_div {
         -moz-page-break-inside: avoid;
         -webkit-column-break-inside: avoid;
         break-inside: avoid;
         margin: 0 10px 10px;
         overflow: hidden;
-        img{
+
+        img {
             border-radius: 10px;
             width: 100%;
-            transition:all 1s ease-out;
-            &:hover{
-                transform:scale(1.3);
+            transition: all 1s ease-out;
+
+            &:hover {
+                transform: scale(1.3);
                 border-radius: 10px;
             }
         }
     }
 }
-.marquee_span{
-    color: rgb(150,155,158);
+.marquee_span {
+    color: rgb(150, 155, 158);
     font-size: 22px;
     cursor: pointer;
+    background-color: #fff;
 }
+
+.ceiling {
+    position: fixed;
+    top: 58px;
+    z-index: 2;
+}
+
+.noneceiling {}
