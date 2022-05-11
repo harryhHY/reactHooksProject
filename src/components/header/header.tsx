@@ -20,7 +20,7 @@ const Header =(props:headeractive)=>{
     },[])
     return (
         <>
-            <div className="headernav animate__animated  animate__bounceInRight">
+            <div className="headernav">
                {
                    headernavList.map(item=>(
                        <div key={item.id} onClick={()=>goto(item)} className={active===item.id?"headernavli headeractive":"headernavli"}>

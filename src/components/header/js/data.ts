@@ -18,5 +18,10 @@ export const headernavList=[
         id:4,
         name:"阅读",
         path:'/read'
+    },
+    {
+        id:5,
+        name:"动漫",
+        path:'/anime'
     }
 ]

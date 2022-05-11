@@ -13,6 +13,7 @@ import Home from "./pages/home/index";
 import Cookie from "./pages/cookie/index";
 import Travel from "./pages/travel";
 import Read from "./pages/read";
+import Anime from "./pages/Anime";
 ReactDOM.render(
   <>
     <BrowserRouter>
@@ -21,6 +22,7 @@ ReactDOM.render(
         <Route path="/cookie" element={<Cookie />} />
         <Route path="/travel" element={<Travel />} />
         <Route path="/read" element={<Read />} />
+        <Route path="/anime" element={<Anime />} />
       </Routes>
     </BrowserRouter>
   </>,

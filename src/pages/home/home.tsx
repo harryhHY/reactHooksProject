@@ -14,9 +14,6 @@ const Home = () => {
       setloding(false);
     }, 1000);
   };
-  const handleChildFun = () => {
-    childMethodRef.current.fun2()
-  };
   const getchildfn = useCallback((data: any) => {
     setChildData(data);
   }, []);
@@ -45,13 +42,6 @@ const Home = () => {
         </button>
         {<div>这是子组件的值{childData}</div>}
         <input type="number" placeholder="555" />
-      </div>
-      <div
-        onClick={() => {
-          handleChildFun();
-        }}
-      >
-        我要
       </div>
       <Footer></Footer>
     </div>

@@ -12,7 +12,7 @@ const Footer = () => {
   }
   return (
     <>
-      <div className="footerdiv animate__animated animate__bounceInLeft">
+      <div className="footerdiv">
         <span>Blog:</span>
         <a href={linkloca} target="_blank">
           {linkloca}

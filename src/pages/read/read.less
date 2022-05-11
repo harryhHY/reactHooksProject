@@ -1,4 +1,5 @@
 .bookdiv{
+    padding: 10px 0;
     .bookdiv_child{
         display: flex;
         align-items: center;
@@ -11,6 +12,10 @@
                 height: 200px;
             }
             .read_name{
+                width: 100%;
+                white-space:nowrap; //不换行
+                text-overflow:ellipsis;
+                overflow: hidden;
                 color: #000;
                 font-size: 18px;
                 text-align: center;
